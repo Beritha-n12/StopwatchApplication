@@ -55,6 +55,32 @@ namespace StopwatchApp  // ✅ Ensure this matches Program.cs
             btnReset.Click += btnReset_Click;
             btnStop.Click += btnStop_Click;
 
+            // Set button styles
+            btnStart.FlatStyle = FlatStyle.Flat;
+            btnPause.FlatStyle = FlatStyle.Flat;
+            btnResume.FlatStyle = FlatStyle.Flat;
+            btnReset.FlatStyle = FlatStyle.Flat;
+            btnStop.FlatStyle = FlatStyle.Flat;
+
+            // Set button colors
+            btnStart.BackColor = Color.Green;
+            btnPause.BackColor = Color.Yellow;
+            btnResume.BackColor = Color.Green;
+            btnReset.BackColor = Color.Red;
+            btnStop.BackColor = Color.Red;
+
+            // Set button sizes
+            btnStart.Size = new System.Drawing.Size(80, 40);
+            btnPause.Size = new System.Drawing.Size(80, 40);
+            btnResume.Size = new System.Drawing.Size(80, 40);
+            btnReset.Size = new System.Drawing.Size(80, 40);
+            btnStop.Size = new System.Drawing.Size(80, 40);
+
+            // Set button fonts
+            btnStart.Font = new System.Drawing.Font("Arial", 12);
+            btnPause.Font = new System.Drawing.Font("Arial", 12);
+            btnResume.Font = new System.Drawing.Font("Arial", 12);
+
             // Add UI elements to the form
             this.Controls.Add(lblTimer);
             this.Controls.Add(btnStart);
